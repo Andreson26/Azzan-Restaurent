@@ -508,6 +508,7 @@ footer {
 	.main-nav li {
 		display: inline-block;
 		margin-left: 5px;
+		display: none;
 		
 	}
 	section {

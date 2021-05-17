@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<meta name="viewport" content="width-device-width, initial-scale-1.0">
 		<link rel="stylesheet" type="text/css" href="Vendors/CSS/normalize.css">
 		<link rel="stylesheet" type="text/css" href="Vendors/CSS/ionicons.min.css">
 		<link rel="stylesheet" type="text/css" href="Vendors/CSS/grid.css">
@@ -15,10 +16,11 @@
 				<div class="row">
 					<img src="Ressources/CSS/Img/AzzanResto.png" alt="Azzan resto" class="logo">
 					<ul class="main-nav">
-						<li><a href="#">Food delivery</a></li>
-						<li><a href="#">How it works</a></li>
-						<li><a href="#">Our cities</a></li>
-						<li><a href="#">Sign up</a></li>
+						<li><a href="#">Home</a></li>
+						<li><a href="#food-delivery">Food delivery</a></li>
+						<li><a href="#how-it-works">How it works</a></li>
+						<li><a href="#our-cities">Our cities</a></li>
+						<li><a href="#account">Sign up</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -28,7 +30,7 @@
 				<a heref="#"><button class="btn btn-ghost">Show me more</button></a>
 			</div>
 		</header>
-		<section class="section-features">
+		<section class="section-features" id="food-delivery">
 			<div class="row">
 				<h2>Get food fast &mdash; not fast food</h2>
 				<p class="long-copy">
@@ -74,7 +76,7 @@
 				<li><figure class="meals-photo"><img src="Ressources/Images/8.jpg" alt="Granola with cherries and strawberries"></figure></li>
 			</ul>
 		</section>
-		<section class="section-steps">
+		<section class="section-steps" id="how-it-works">
 			<div class="row">
 				<h2>How it works &mdash; Simple as 1, 2, 3</h2>
 			</div>
@@ -100,7 +102,7 @@
 				</div>
 			</div>
 		</section> 
-		<section class="section-cities">
+		<section class="section-cities" id="our-cities">
 			<div class="row">
 				<h2>We're currently in these cities</h2>
 			</div>
@@ -265,6 +267,92 @@
 				</div>
 			</div>
 		</section>
+		<section class="section-form" id="account">
+			<div class="row">
+				<h2>We're happy to hear from you</h2>
+			</div>
+			<div class="row">
+				<form method="post" action="#" class="contact-form">
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label for="name">Name</label>
+						</div>
+						<div class="col span-2-0f-3">
+							<input type="text" name="name" id="name" placeholder="Your name" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label for="email">Email</label>
+						</div>
+						<div class="col span-2-0f-3">
+							<input type="text" name="email" id="email" placeholder="Your email" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label for="find-us">How dit you find us?</label>
+						</div>
+						<div class="col span-2-0f-3">
+							<select name="find-us" id="find-us">
+								<option value="friends selected">Friends</option>
+								<option value="search">Search engine</option>
+								<option value="ad">Advertisement</option>
+								<option value="other">Other</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label>Newsletter</label>
+						</div>
+						<div class="col span-2-0f-3">
+							<input type="checkbox" name="news" id="news" checked> Yes, please
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label>Drop us a line</label>
+						</div>
+						<div class="col span-2-0f-3">
+							<textarea name="message" placeholder="Your message"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label>&nbsp;</label>
+						</div>
+						<div class="col span-2-0f-3">
+							<input type="submit" value="Send it!">
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+		<footer>
+			<div class="row">
+				<div class="col span-1-of-2">
+					<ul class="footer-nav">
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Press</a></li>
+						<li><a href="#">iOs App</a></li>
+						<li><a href="#">Android App</a></li>
+					</ul>
+				</div>
+				<div class="col span-1-of-2">
+					<ul class="social-links">
+						<li><a href="#"><i class="ion-social-facebook"></i></a></li>
+						<li><a href="#"><i class="ion-social-twitter"></i></a></li>
+						<li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+						<li><a href="#"><i class="ion-social-instagram"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<p>Copyright &copy; 2020 by AzzanResto. All rights reserved</p>
+			</div>
+		</footer>
 	
 	
 	</body>
